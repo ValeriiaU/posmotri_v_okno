@@ -39,7 +39,7 @@ ol {
 
 .content {
   display: grid;
-  padding: 133px 30px;
+  margin: 133px 30px;
   grid-template-columns: 711px 30px 399px;
   grid-template-rows: 534px;
 }
@@ -147,7 +147,8 @@ label span:not(:last-child) {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
+  display: flex;
+
 }
 
 input[type="checkbox"]:checked+.search-form__pseudo-checkbox::before {
@@ -155,9 +156,9 @@ input[type="checkbox"]:checked+.search-form__pseudo-checkbox::before {
   width: 14px;
   height: 14px;
   background-color: #FFF;
-  position: absolute;
-  top: 1.7px;
-  left: 1.7px;
+  margin-top: 1.7px;
+  margin-left: 1.7px;
+  z-index: 1;
 }
 
 .button {
